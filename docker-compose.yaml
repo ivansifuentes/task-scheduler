@@ -1,0 +1,17 @@
+services:
+  # frontend:
+  #   build: ./ivan-front-end
+  #   container_name: frontend_c
+  #   ports:
+  #     - '3000:3000'
+  # backend:
+  #   build: ./back-end
+  #   container_name: backend_c
+  #   ports:
+  #     - '4000:4000'
+  #   stdin_open: true
+  #   tty: true
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
